@@ -7,6 +7,7 @@ RUN mkdir -p /app/mount
 RUN addgroup mcuser
 RUN adduser -G mcuser -h /app -SDHs /sbin/nologin mcuser
 
+ENV MCRAM 2G
 EXPOSE 25565/tcp
 USER mcuser:mcuser
 CMD cat README.md
