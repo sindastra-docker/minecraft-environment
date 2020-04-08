@@ -9,6 +9,13 @@ Then make sure your Minecraft directory on the host is accessible from the Docke
 
     chmod -R 777 /path/to/minecraft
 
+If you don't want to give such broad permissions to your Minecraft server directory, 
+you can instead assign it to a local user and group with
+
+    chown -R user:group /path/to/minecraft (replacing with the desired local user and group)
+
+And then pass the local user and local group ID to "docker run" with --user 1001:1001 (replacing with the desired IDs)
+
 Now run the Docker container and replace script.sh with either minecraft.sh or spigot.sh
 depending on whether you are using the official "vanilla" Minecraft or SpigotMC.
 
