@@ -16,4 +16,6 @@ depending on whether you are using the official "vanilla" Minecraft or SpigotMC.
     
 In both command examples, you will have to replace /path/to/minecraft with your actual server path (the directory with the .jar file)!
 
+For generic server instructions you might want to check https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server
+
 ###### "Minecraft" is a trademark of Mojang Synergies AB. This Docker image is not affiliated with Mojang Synergies AB.
