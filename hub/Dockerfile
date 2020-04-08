@@ -1,9 +1,11 @@
 FROM openjdk:8-alpine
-EXPOSE 25565/tcp
+COPY . /app
 WORKDIR /app
 
 RUN mkdir -p /app/mount
 RUN addgroup mcuser
 RUN adduser -G mcuser -h /app -SDHs /sbin/nologin mcuser
 
+EXPOSE 25565/tcp
 USER mcuser:mcuser
+CMD cat README.md
